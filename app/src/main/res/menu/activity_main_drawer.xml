@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_view_events"
+            android:icon="@android:drawable/ic_menu_view"
+            android:title="View Events" />
+        <item
+            android:id="@+id/nav_delete"
+            android:icon="@android:drawable/ic_menu_delete"
+            android:title="Delete Events" />
+        <item
+            android:id="@+id/nav_select"
+            android:icon="@android:drawable/ic_menu_info_details"
+            android:title="Completed Events" />
+        <item
+            android:id="@+id/nav_notifiaction"
+            android:icon="@android:drawable/ic_menu_preferences"
+            android:title="Notification Settings" />
+    </group>
+</menu>

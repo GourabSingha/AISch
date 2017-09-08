@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_event_update"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorPressedHighlight"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="misclicks.aischmark1.event_update">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/event_up"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="20dp"
+        android:text="location"
+        android:textColor="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/location_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="location"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView4"
+        android:text="Name of event to be updated"
+        android:textColor="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/event_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="event name"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/location_up"
+        android:layout_below="@+id/location_up"
+        android:layout_marginTop="35dp"
+        android:text="date"
+        android:textColor="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/date_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView5"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="date"
+        android:inputType="date"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/date_up"
+        android:layout_below="@+id/date_up"
+        android:layout_marginTop="32dp"
+        android:text="Time"
+        android:textColor="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/time_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView9"
+        android:layout_below="@+id/textView9"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:hint="time"
+        android:inputType="time"
+        android:textColor="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:text="Update"
+        android:textColor="?android:attr/colorPressedHighlight" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/date_up"
+        android:layout_alignBottom="@+id/date_up"
+        android:layout_alignParentEnd="true"
+        android:background="@color/colorPrimary"
+        android:text="Select Date"
+        android:textColor="?android:attr/colorPressedHighlight" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/time_up"
+        android:layout_alignStart="@+id/button"
+        android:background="@color/colorPrimary"
+        android:text="Select Time"
+        android:textColor="?android:attr/colorPressedHighlight" />
+
+</RelativeLayout>
